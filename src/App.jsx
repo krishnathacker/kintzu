@@ -70,11 +70,11 @@ export default function InvestorMicrosite() {
     };
     document.addEventListener("click", handleClick);
     return (
-    <AccessGate>) => document.removeEventListener("click", handleClick);
+    <>) => document.removeEventListener("click", handleClick);
   }, []);
 
   return (
-    <AccessGate>
+    <>
     <div className="min-h-screen bg-[linear-gradient(180deg,#FDFBF8_0%,#F8E6D3_100%)] text-slate-800">
       {/* NAV */}
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/60 border-b border-amber-200/40">
