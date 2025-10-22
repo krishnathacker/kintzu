@@ -1,4 +1,46 @@
-import React, { useEffect } from "react";
+00:18:58.343 Running build in Washington, D.C., USA (East) – iad1
+00:18:58.344 Build machine configuration: 2 cores, 8 GB
+00:18:58.441 Cloning github.com/krishnathacker/kintzu (Branch: main, Commit: bb3719a)
+00:18:58.720 Previous build caches not available
+00:18:58.982 Cloning completed: 540.000ms
+00:18:59.475 Running "vercel build"
+00:18:59.952 Vercel CLI 48.2.9
+00:19:00.555 Installing dependencies...
+00:19:22.401 
+00:19:22.401 added 213 packages in 22s
+00:19:22.402 
+00:19:22.402 36 packages are looking for funding
+00:19:22.403   run `npm fund` for details
+00:19:22.553 
+00:19:22.553 > kintzu-investor-microsite@1.0.0 build
+00:19:22.553 > vite build
+00:19:22.553 
+00:19:22.830 [36mvite v5.4.21 [32mbuilding for production...[36m[39m
+00:19:22.880 transforming...
+00:19:23.311 [32m✓[39m 3 modules transformed.
+00:19:23.312 [31mx[39m Build failed in 458ms
+00:19:23.312 [31merror during build:
+00:19:23.312 [31m[vite:esbuild] Transform failed with 1 error:
+00:19:23.313 /vercel/path0/src/App.jsx:442:0: ERROR: Unexpected end of file before a closing fragment tag[31m
+00:19:23.313 file: [36m/vercel/path0/src/App.jsx:442:0[31m
+00:19:23.313 [33m
+00:19:23.313 [33mUnexpected end of file before a closing fragment tag[33m
+00:19:23.313 440|    );
+00:19:23.313 441|  }
+00:19:23.313 442|  
+00:19:23.314    |  ^
+00:19:23.314 [31m
+00:19:23.314     at failureErrorWithLog (/vercel/path0/node_modules/esbuild/lib/main.js:1472:15)
+00:19:23.314     at /vercel/path0/node_modules/esbuild/lib/main.js:755:50
+00:19:23.314     at responseCallbacks.<computed> (/vercel/path0/node_modules/esbuild/lib/main.js:622:9)
+00:19:23.314     at handleIncomingPacket (/vercel/path0/node_modules/esbuild/lib/main.js:677:12)
+00:19:23.314     at Socket.readFromStdout (/vercel/path0/node_modules/esbuild/lib/main.js:600:7)
+00:19:23.314     at Socket.emit (node:events:519:28)
+00:19:23.314     at addChunk (node:internal/streams/readable:561:12)
+00:19:23.314     at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+00:19:23.315     at Readable.push (node:internal/streams/readable:392:5)
+00:19:23.315     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)[39m
+00:19:23.337 Error: Command "npm run build" exited with 1import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, BarChart, Bar, Legend } from "recharts";
 import { ArrowRight, Landmark, Scale, Users, Compass, Handshake, Heart, ChartLine, Briefcase, PieChart as PieIcon, Rocket, Shield, Mail, Globe, CheckCircle2 } from "lucide-react";
@@ -74,7 +116,6 @@ export default function InvestorMicrosite() {
   }, []);
 
   return (
-    <>
     <div className="min-h-screen bg-[linear-gradient(180deg,#FDFBF8_0%,#F8E6D3_100%)] text-slate-800">
       {/* NAV */}
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/60 border-b border-amber-200/40">
