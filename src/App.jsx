@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import AccessGate from "./AccessGate.jsx";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, BarChart, Bar, Legend } from "recharts";
 import { ArrowRight, Landmark, Scale, Users, Compass, Handshake, Heart, ChartLine, Briefcase, PieChart as PieIcon, Rocket, Shield, Mail, Globe, CheckCircle2 } from "lucide-react";
 
