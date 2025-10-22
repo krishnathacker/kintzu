@@ -439,5 +439,3 @@ export default function InvestorMicrosite() {
     </div>
   );
 }
-
-    </AccessGate>
