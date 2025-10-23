@@ -3,6 +3,4 @@
 @tailwind utilities;
 
 :root { color-scheme: light; }
-
-/* Typography helpers for prose-like content */
 .prose p { margin: 0.5rem 0; }

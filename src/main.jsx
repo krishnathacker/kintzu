@@ -3,8 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import InvestorMicrosite from './App.jsx'
 
-const root = createRoot(document.getElementById('root'))
-root.render(
+createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <InvestorMicrosite />
   </React.StrictMode>
