@@ -119,61 +119,64 @@ export default function InvestorMicrosite() {
       </header>
 
       {/* HERO / COVER */}
-      <section id="hero" className="relative overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 py-24 md:py-28">
-          <motion.h1
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-4xl md:text-6xl font-serif leading-tight text-slate-900"
-          >
-            KINTZU: <span className="text-amber-600">Life Transition Platform</span>
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.6 }}
-            className="mt-5 text-lg md:text-xl max-w-4xl"
-          >
-            Kintzu helps people navigate relationship transitions with dignity and structure — combining
-            counselling, mentoring, legal guidance, and financial clarity in one trusted experience.
-            It’s not a divorce platform. It’s <strong>a life transition platform</strong>.
-          </motion.p>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
-            <Pill><Shield size={16} /> Privacy-first</Pill>
-            <Pill><Heart size={16} /> Human in the loop</Pill>
-            <Pill><Compass size={16} /> Guided decisions</Pill>
-          </div>
-          <div className="mt-10 flex flex-wrap gap-3">
-            <a
-              href="#solution"
-              className="inline-flex items-center gap-2 rounded-2xl bg-amber-400 hover:bg-amber-500 text-white px-5 py-3 text-sm md:text-base transition"
-            >
-              Explore the solution <ArrowRight size={16} />
-            </a>
-            <a
-              href="#financials"
-              className="inline-flex items-center gap-2 rounded-2xl border border-slate-300 bg-white hover:bg-slate-50 px-5 py-3 text-sm md:text-base transition"
-            >
-              See projections <ChartLine size={16} />
-            </a>
-          </div>
-        </div>
-        {/* Decorative kintsugi seam */}
-        <svg
-          className="absolute -bottom-12 right-0 w-[520px] h-[220px] opacity-70"
-          viewBox="0 0 600 260"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M20 200 C120 120, 240 280, 360 160 S 520 40, 600 120"
-            stroke="#D4AF37"
-            strokeWidth="6"
-            strokeLinecap="round"
-          />
-        </svg>
-      </section>
+<section id="hero" className="relative overflow-hidden">
+  {/* Background image */}
+  <img
+    src="/kintzu-hero.jpg"
+    alt="Kintsugi-inspired landscape artwork"
+    className="absolute inset-0 w-full h-full object-cover"
+    loading="eager"
+    fetchpriority="high"
+  />
+
+  {/* Soft gradient overlay for text readability */}
+  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(253,251,248,0.92)_0%,rgba(248,230,211,0.70)_40%,rgba(248,230,211,0.35)_100%)]"></div>
+
+  {/* Content */}
+  <div className="relative max-w-6xl mx-auto px-4 py-24 md:py-32">
+    <motion.h1
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      className="text-4xl md:text-6xl font-serif leading-tight text-slate-900 drop-shadow-sm"
+    >
+      KINTZU: <span className="text-amber-700">Life Transition Platform</span>
+    </motion.h1>
+
+    <motion.p
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.1, duration: 0.6 }}
+      className="mt-5 text-lg md:text-xl max-w-3xl text-slate-800 drop-shadow-[0_1px_0_rgba(255,255,255,0.55)]"
+    >
+      Kintzu helps people navigate relationship transitions with dignity and structure — combining
+      counselling, mentoring, legal guidance, and financial clarity in one trusted experience.
+      It’s not a divorce platform. It’s <strong>a life transition platform</strong>.
+    </motion.p>
+
+    <div className="mt-6 flex flex-wrap items-center gap-3">
+      <Pill><Shield size={16}/> Privacy-first</Pill>
+      <Pill><Heart size={16}/> Human in the loop</Pill>
+      <Pill><Compass size={16}/> Guided decisions</Pill>
+    </div>
+
+    <div className="mt-10 flex flex-wrap gap-3">
+      <a
+        href="#solution"
+        className="inline-flex items-center gap-2 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white px-5 py-3 text-sm md:text-base transition"
+      >
+        Explore the solution <ArrowRight size={16}/>
+      </a>
+      <a
+        href="#financials"
+        className="inline-flex items-center gap-2 rounded-2xl border border-slate-300 bg-white/90 hover:bg-white px-5 py-3 text-sm md:text-base transition"
+      >
+        See projections <ChartLine size={16}/>
+      </a>
+    </div>
+  </div>
+</section>
+
 
       {/* CRISIS / PROBLEM */}
       <Section id="problem" title="The Crisis: Emotional Chaos, Structural Void" kicker="Context">
